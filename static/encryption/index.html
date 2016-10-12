@@ -1,0 +1,35 @@
+<html>
+<head></head>
+<body>
+<doc>
+<h1>Client based message encryption/decryption.</h1>
+
+<label for="encrypt">Encrypt</label>
+  <input type="radio" name="method" id="encrypt" value="encrypt" checked><br>
+  <label for="decrypt">Decrypt</label>
+  <input type="radio" name="method" id="decrypt" value="decrypt"><br>
+
+  <label for "mykey">My Key word</label>
+  <br>
+	<input type="text" id="mykey" placeholder="magickey"><br>
+  
+  <label for "mymessage">Enter text message here.</label>
+  <br>
+ <textarea id="mymessage" rows="10" cols="50">
+</textarea><br><br>
+
+<button id="mybutton" type="button"  onclick="processRequest('clicked!')">Process my message</button>
+
+<br><br>
+<button id="mycopybutton" type="button"  onclick="document.getElementById('mymessage').value=document.getElementById('sampletext').value">Copy to message</button>
+<br>
+<label for "sampletext">Some text to copy for encoding.</label>
+  <br>
+<textarea id="sampletext"rows="10" cols="50">When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.
+</textarea>
+<script src="encryption.js"></script>
+<script src="app.js"></script>
+
+</doc>
+</body>
+</html>
